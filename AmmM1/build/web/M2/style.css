@@ -1,0 +1,265 @@
+
+  
+  
+  /* definisco sfondo delle pagine, font base, altezza larghezza e spazio tra le lettere */
+body{ 
+    background-image: url("./eggshell.jpg");
+	
+    font-family: "Warnock";
+    color:black; 
+    height: auto;
+    width: auto; 
+	letter-spacing: 2px;
+    }
+	
+	/* definisco proprietà dei titoli e dei paragrafi */
+	h1 {
+	
+	font-size: 500%;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	max-width: 1000 px;
+	display: block;
+	color: white;
+    text-shadow: 2px 2px 4px #000000;
+	
+}
+h2{
+
+	font-size: 300%;
+	font-style: normal;
+	font-weight: 500;
+	display:block;
+}
+h2 {
+	
+	font-size: 160%;
+	font-style: normal;
+	font-weight: 400;
+	display:block;
+}
+h3 {
+	
+	font-size: 130%;
+	font-style: normal;	
+	font-weight: 400;
+	display:block;
+}
+p {
+	
+	font-size: 100%;
+	font-style: normal;
+	
+	font-weight: 400;
+	line-height: 20px;
+	
+}
+
+/* Definisco proprietà dei link, in tutti i loro eventuali stati: stato base, visitato, col mouse sopra e attivo, ovvero quando ci si clicca */
+a:link {	color:#B00000 ;
+	 text-decoration: none;
+}
+
+a:visited {
+   	color: #4B0082;
+
+}
+
+a:hover {
+	color:#ff6666;
+}
+
+a:active {
+    color:white;
+} 
+
+.Desc {
+	
+	  padding: 8px;
+	  
+}
+
+.titolo{
+	color: black;
+}
+
+/* Definisco proprietà base tabelle: Il colore degli elementi pari e dispari, il bordo delle tabelle, il font usato negli elementi sia
+   di th che delle celle normali, il padding negli elementi di testa, la grandezza del font, trasformo le scritte degli elementi di testa
+   facendoli diventare maiuscoli, allineo il testo nelle tr al centro, ed alcune altre proprietà.   */
+
+tr:nth-child(odd) {background-color: #b3d1ff;}
+tr:nth-child(even) {background-color:#ccf5ff;}
+
+table{
+	 border-collapse: collapse;
+}
+table, th, td {
+   border: 1px solid black;
+ 
+
+}
+
+th {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	padding: 50px;
+	 text-transform: uppercase;
+	  font-size: 250%;
+	  
+}
+tr {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	letter-spacing: 3px;
+	height: 50px;
+	 text-align: center;
+	
+	
+ font-size: 80%;
+}
+/*Definisco le proprietà della classe bottone, che uso sia per rappresentare link che bottoni di input */
+.bottone {
+	
+	color: white;
+    padding: 10px 15px;
+    background: #4479BA;
+    border-radius: 7px;
+    border: inset 3px #20538D;
+   
+    
+}
+.bottone:hover {
+    background: #356094;
+    border: outset 3px #20538D;
+    text-decoration: none;
+	color:red;
+	 cursor: pointer;
+}
+.bottone:active {
+    
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    background: #2E5481;
+    border: inset 3px #203E5F;
+	color: #99FF33;
+	 cursor: pointer;
+}
+/*Definisco le proprietà dell'input*/
+input {
+    width: 40%;
+    padding: 8px 14px;
+    margin: 6px ;
+    box-sizing: border-box;
+	 border: 2px inset 	#8c1aff;
+    border-radius: 8px;
+	background-color:  #ffffb3;
+    color: black;
+	 display:list-item;
+
+}
+input:focus {
+   background-color: lightblue;
+	 
+}
+textarea{
+	background-color:  #ffffb3;
+	border-radius: 8px;
+	background-color:  #ffffb3;
+	 border: 2px inset 	#8c1aff;
+	 width: 50%;
+}
+textarea:focus{
+	background-color: #b3d1ff;
+	
+}
+/*Definisco le proprietà della classe intestazione, che uso nelle label per gli input.*/
+.intestazione{
+	display:block;
+	font-size: 2em;
+}
+/*Proprietà dei campi di input spefici.*/
+#Quantità{
+	width:5%;
+}
+
+#Prezzo{
+	width:8%;
+}
+
+#NomeStrumento{
+	width:28%;
+}
+#img{
+	width:16%;
+}
+#BottVendita{
+	  position: relative; top: 20px; left: 250px; 
+}
+#username{
+	width:28%;
+}
+#password{
+	width:28%;
+}
+
+/*Definisco la visualizzazione delle merci nella pagina cliente.*/
+#Cliente{
+	overflow:scroll;
+	max-width:94%;
+}
+/*Definisco le proprietà di visualizzazione nei vari campi in base alla grandezza della finestra.*/
+@media only screen and (min-width: 1280px)
+{
+ 
+ nav{float:left;
+ float: left;
+ width: 20%;
+ padding-left: 5px;
+ ;
+ }
+ article { float:right;
+ width: auto;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: auto;
+ margin-bottom:auto;
+ 
+ 
+ }
+ 
+ 
+
+ /*Definisco alcune proprietà dell'articolo della pagina principale nel caso sia visualizzata su uno schermo grande.*/
+ #Home{
+	 border-style: groove;
+	 border-color: gray;
+ }
+}
+@media only screen and (min-width: 480px)
+ and (max-width: 1280px)
+{
+ 
+ 
+}
+@media only screen and (max-width: 480px)
+{
+ nav{
+	display:box;
+ }
+ 
+}
+/*Definisco proprietà dei titoli principali*/
+#Titolone{background-image:url("./Musica.jpg");
+color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+/*Definisco la grandezza del Bottone di input della pagina di login*/
+
+#Bottone2{
+	margin-left: 20%;
+ margin-right: 20%;
+ margin-top: auto;
+ margin-bottom:auto;
+ 	width:150px;
+}
+
+
